@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page demo</title>
+	<link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+
+
+	<table>  
+		<thead>  
+			<tr>  
+				<th>ID</th>  
+				<th>用户名</th>  
+				<th>性别</th>  
+				<th>年龄</th>  
+				<th>Email</th>  
+				<th>地址</th>  
+				<th>注册时间</th>  
+			</tr>  
+		</thead>  
+		<tbody id="tbody">
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+			<tr><td>user.userId</td><td>user.username</td><td>user.sex</td><td>user.age</td><td>user.email</td><td>user.address</td><td>user.registerTime</td></tr>
+		</tbody>  
+	</table>  
+
+
+
+
+	<!-- 
+		参数说明:
+
+		class 必须，用于启动js分页
+		total 必须，总页数
+		each  非必须，每页显示条数，默认20条
+		ajax  非必须,有且值为false时，启动同步刷新方式 || 声明或者不赋值则启动ajax方式
+		url   非必须，分页访问的url
+
+		updateto 异步方式必须，用于显示ajax更新的内容
+		buildfun 异步方式必须，用于接着json内容
+		page  非异步方式必须，用于显示当前页
+
+		demo:
+		1.同步
+			<div class="ajaxpage" total="19" each="10" page="13" ajax="false"></div>
+
+		2.异步
+				<script>
+					function buildfun(obj) {
+						return [
+							'<tr>',
+							'<td>', obj.userId, '</td>',
+							'<td>', obj.username, '</td>',
+							'<td>', obj.sex, '</td>',
+							'<td>', obj.age, '</td>',
+							'<td>', obj.email, '</td>',
+							'<td>', obj.address, '</td>',
+							'<td>', obj.registerTime, '</td>',
+							'<td></td>',
+							'</tr>'
+						].join('');
+					}
+				</script>
+			<div class="ajaxpage" total="19" each="10" updateto="#tbody" url="http://localhost/test.jsp" buildfun="buildfun" ></div>
+
+
+	 -->
+	<div class="ajaxpage" total="19" each="10" page="13" ajax="false"  updateto="#tbody" ></div>
+
+
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.page.js"></script>
+
+	<script>
+
+		$(document).ready(function() {
+
+			// demo html属性
+			// $('.ajaxpage').page();
+
+
+			// demo js 传参
+			// $('.ajaxpage').page({
+			// 	total:500,//总条数
+			// 	each:20,//每页条数
+			// 	page:1,//默认当前页数 
+			// 	url:'http://localhost/page/text.php',//异步调用地址
+			// 	buildfun:function(obj){
+			// 		return [
+			// 			'<tr>',
+			// 			'<td>', obj.userId, '</td>',
+			// 			'<td>', obj.username, '</td>',
+			// 			'<td>', obj.sex, '</td>',
+			// 			'<td>', obj.age, '</td>',
+			// 			'<td>', obj.email, '</td>',
+			// 			'<td>', obj.address, '</td>',
+			// 			'<td>', obj.registerTime, '</td>',
+			// 			'<td></td>',
+			// 			'</tr>'
+			// 		].join('');
+			// 	},//构建内容函数
+			// 	updateto:$('#tbody') //更新到目标
+			// });
+
+		});
+
+
+
+
+	
+	</script>
+</body>
+</html>
